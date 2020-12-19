@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PqR-zl-kJm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PqR-zl-kJm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,53 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MYg-0E-Gk1">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MYg-0E-Gk1">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC4-W8-xCp">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="186"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC4-W8-xCp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
                                         <state key="normal" title="IQKeyboardManager"/>
                                         <connections>
                                             <segue destination="CU4-aW-Cqf" kind="show" id="qqC-se-LqI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-YB-tZD">
-                                        <rect key="frame" x="0.0" y="196" width="414" height="186"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-YB-tZD">
+                                        <rect key="frame" x="0.0" y="157" width="414" height="146.5"/>
                                         <state key="normal" title="Lottie"/>
                                         <connections>
                                             <segue destination="rzR-JT-Zz3" kind="show" id="As7-1h-RIk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-qS-5q9">
-                                        <rect key="frame" x="0.0" y="392" width="414" height="186"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-qS-5q9">
+                                        <rect key="frame" x="0.0" y="313.5" width="414" height="147"/>
                                         <state key="normal" title="ActiveLabel"/>
                                         <connections>
                                             <segue destination="o9g-xa-TVj" kind="show" id="L3X-pA-w3K"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-QZ-3SM">
-                                        <rect key="frame" x="0.0" y="588" width="414" height="186"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-QZ-3SM">
+                                        <rect key="frame" x="0.0" y="470.5" width="414" height="146.5"/>
                                         <state key="normal" title="Kingfisher"/>
                                         <connections>
                                             <segue destination="wfE-pd-3d3" kind="show" id="KTi-ze-A1F"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvt-9U-fp1">
+                                        <rect key="frame" x="0.0" y="627" width="414" height="147"/>
+                                        <state key="normal" title="SwityAttribute"/>
+                                        <connections>
+                                            <segue destination="fMY-qw-LXZ" kind="show" id="pdx-2w-XXE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="fC4-W8-xCp" firstAttribute="height" secondItem="KpJ-YB-tZD" secondAttribute="height" id="Cro-aG-CWb"/>
-                                    <constraint firstItem="hGU-QZ-3SM" firstAttribute="height" secondItem="fC4-W8-xCp" secondAttribute="height" id="Ocj-eV-ohc"/>
-                                    <constraint firstItem="zdz-qS-5q9" firstAttribute="height" secondItem="fC4-W8-xCp" secondAttribute="height" id="fwa-ZY-o5R"/>
-                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYg-0E-Gk1" secondAttribute="trailing" id="2Cl-52-FJd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MYg-0E-Gk1" secondAttribute="bottom" id="DkG-Jo-wFy"/>
                             <constraint firstItem="MYg-0E-Gk1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GlD-vE-Qr4"/>
                             <constraint firstItem="MYg-0E-Gk1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w1o-vd-6cl"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9Yl-44-j1z"/>
                 </viewController>
@@ -100,6 +103,16 @@
             </objects>
             <point key="canvasLocation" x="872" y="367"/>
         </scene>
+        <!--SwiftyAttribute-->
+        <scene sceneID="Y7i-kw-fgS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SwiftyAttribute" id="fMY-qw-LXZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bOR-TD-2h7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ex-bd-iAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="434"/>
+        </scene>
         <!--Keyboard-->
         <scene sceneID="Gy1-4q-56l">
             <objects>
@@ -127,4 +140,9 @@
             <point key="canvasLocation" x="-478" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

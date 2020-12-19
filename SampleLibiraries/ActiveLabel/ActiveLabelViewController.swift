@@ -19,7 +19,7 @@ final class ActiveLabelViewController: UIViewController {
       activeLabel1.enabledTypes = [.mention]
       activeLabel1.text = "こちらこそありがとうございます！\n @sakiyamaK 楽しみに待っています！"
       activeLabel1.textColor = .black
-      activeLabel1.hashtagColor = .red
+      activeLabel1.mentionColor = .red
       activeLabel1.handleMentionTap { self.alert("mention", message: $0) }
     }
   }
@@ -33,7 +33,7 @@ final class ActiveLabelViewController: UIViewController {
       activeLabel2.enabledTypes = [.hashtag]
       activeLabel2.text = "プログラミングを始めて２日目！\n終えることができました。\n継続して勉強できるように頑張りたい\n#駆け出しエンジニアと繋がりたい\n"
       activeLabel2.textColor = .black
-      activeLabel2.mentionColor = .blue
+      activeLabel2.hashtagColor = .blue
       activeLabel2.handleHashtagTap { self.alert("hashtag", message: $0) }
     }
   }
@@ -58,9 +58,9 @@ final class ActiveLabelViewController: UIViewController {
       activeLabelContainerView4.addSubview(activeLabel4)
       activeLabel4.snp.makeConstraints { $0.edges.equalToSuperview() }
       activeLabel4.numberOfLines = 0
-      let actieType = ActiveType.custom(pattern: "\\s崎山\\b")
+      let actieType = ActiveType.custom(pattern: "\\s崎.\\b")
       activeLabel4.enabledTypes = [actieType]
-      activeLabel4.text = "今日は雨だなああ 崎山 圭でええええす"
+      activeLabel4.text = "今日は雨だなああ 崎山 圭でええええす 崎田 でえす"
       activeLabel4.textColor = .black
       activeLabel4.customColor = [actieType: .systemPink]
       activeLabel4.handleCustomTap(for: actieType) { self.alert("custom", message: $0) }

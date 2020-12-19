@@ -30,6 +30,8 @@
 		B66F61122504A5FA0026A9FC /* SampleLibirariesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F61112504A5FA0026A9FC /* SampleLibirariesUITests.swift */; };
 		B66F61212504AD220026A9FC /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F61202504AD220026A9FC /* Keyboard.storyboard */; };
 		B66F61232504AD2F0026A9FC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F61222504AD2F0026A9FC /* KeyboardViewController.swift */; };
+		B6DDFF78253D3133001303B1 /* SwiftyAttribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DDFF77253D3133001303B1 /* SwiftyAttribute.storyboard */; };
+		B6DDFF7D253D3140001303B1 /* SwiftyAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DDFF7C253D3140001303B1 /* SwiftyAttributeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		B66F61132504A5FA0026A9FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66F61202504AD220026A9FC /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		B66F61222504AD2F0026A9FC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		B6DDFF77253D3133001303B1 /* SwiftyAttribute.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftyAttribute.storyboard; sourceTree = "<group>"; };
+		B6DDFF7C253D3140001303B1 /* SwiftyAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAttributeViewController.swift; sourceTree = "<group>"; };
 		B7770190CCB484F00F18CC1C /* Pods_SampleLibiraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleLibiraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F94BB8D9EE4D2D31BB3078 /* Pods-SampleLibiraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleLibiraries.debug.xcconfig"; path = "Target Support Files/Pods-SampleLibiraries/Pods-SampleLibiraries.debug.xcconfig"; sourceTree = "<group>"; };
 		E9867B095CB884CA9563389F /* Pods-SampleLibirariesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleLibirariesTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleLibirariesTests/Pods-SampleLibirariesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		B66F60EE2504A5F80026A9FC /* SampleLibiraries */ = {
 			isa = PBXGroup;
 			children = (
+				B6DDFF73253D3120001303B1 /* SwiftyAttribute */,
 				B660ECD4250C8B86003654BB /* Kingfisher */,
 				B660ECCF250C81A1003654BB /* ActiveLabel */,
 				B660ECC8250BD2A3003654BB /* animations */,
@@ -250,6 +255,15 @@
 				B66F61222504AD2F0026A9FC /* KeyboardViewController.swift */,
 			);
 			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		B6DDFF73253D3120001303B1 /* SwiftyAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				B6DDFF77253D3133001303B1 /* SwiftyAttribute.storyboard */,
+				B6DDFF7C253D3140001303B1 /* SwiftyAttributeViewController.swift */,
+			);
+			path = SwiftyAttribute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +378,7 @@
 				B66F60FC2504A5FA0026A9FC /* LaunchScreen.storyboard in Resources */,
 				B660ECC4250BD241003654BB /* Lottie.storyboard in Resources */,
 				B66F60F92504A5FA0026A9FC /* Assets.xcassets in Resources */,
+				B6DDFF78253D3133001303B1 /* SwiftyAttribute.storyboard in Resources */,
 				B66F60F72504A5F80026A9FC /* Main.storyboard in Resources */,
 				B660ECCC250BD2AC003654BB /* 9965-loading-spinner.json in Resources */,
 				B66F61212504AD220026A9FC /* Keyboard.storyboard in Resources */,
@@ -506,6 +521,7 @@
 				B660ECD8250C8BAD003654BB /* KingfisherViewController.swift in Sources */,
 				B660ECC1250BA790003654BB /* RswiftViewController.swift in Sources */,
 				B660ECD3250C81D8003654BB /* ActiveLabelViewController.swift in Sources */,
+				B6DDFF7D253D3140001303B1 /* SwiftyAttributeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
