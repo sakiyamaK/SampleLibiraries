@@ -21,6 +21,7 @@
 		B660ECD3250C81D8003654BB /* ActiveLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660ECD2250C81D8003654BB /* ActiveLabelViewController.swift */; };
 		B660ECD6250C8B9D003654BB /* Kingfisher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B660ECD5250C8B9D003654BB /* Kingfisher.storyboard */; };
 		B660ECD8250C8BAD003654BB /* KingfisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660ECD7250C8BAD003654BB /* KingfisherViewController.swift */; };
+		B663EC14258DD373001E37FD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663EC13258DD373001E37FD /* R.generated.swift */; };
 		B66F60F02504A5F80026A9FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F60EF2504A5F80026A9FC /* AppDelegate.swift */; };
 		B66F60F42504A5F80026A9FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F60F32504A5F80026A9FC /* ViewController.swift */; };
 		B66F60F72504A5F80026A9FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F60F52504A5F80026A9FC /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		B660ECD2250C81D8003654BB /* ActiveLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLabelViewController.swift; sourceTree = "<group>"; };
 		B660ECD5250C8B9D003654BB /* Kingfisher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Kingfisher.storyboard; sourceTree = "<group>"; };
 		B660ECD7250C8BAD003654BB /* KingfisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherViewController.swift; sourceTree = "<group>"; };
+		B663EC13258DD373001E37FD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		B66F60EC2504A5F80026A9FC /* SampleLibiraries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleLibiraries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F60EF2504A5F80026A9FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66F60F32504A5F80026A9FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		B66F60EE2504A5F80026A9FC /* SampleLibiraries */ = {
 			isa = PBXGroup;
 			children = (
+				B663EC13258DD373001E37FD /* R.generated.swift */,
 				B6DDFF73253D3120001303B1 /* SwiftyAttribute */,
 				B660ECD4250C8B86003654BB /* Kingfisher */,
 				B660ECCF250C81A1003654BB /* ActiveLabel */,
@@ -274,6 +277,7 @@
 			buildConfigurationList = B66F61162504A5FA0026A9FC /* Build configuration list for PBXNativeTarget "SampleLibiraries" */;
 			buildPhases = (
 				9079CB1D2EE83DB0E8A1522F /* [CP] Check Pods Manifest.lock */,
+				B663EBFB258DD2D7001E37FD /* Run Script(R.swift) */,
 				B66F60E82504A5F80026A9FC /* Sources */,
 				B66F60E92504A5F80026A9FC /* Frameworks */,
 				B66F60EA2504A5F80026A9FC /* Resources */,
@@ -490,6 +494,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B663EBFB258DD2D7001E37FD /* Run Script(R.swift) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"",
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run Script(R.swift)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		EBF95D3F6B32CAD274642082 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -516,6 +541,7 @@
 			files = (
 				B660ECC6250BD24E003654BB /* LottieViewController.swift in Sources */,
 				B66F60F42504A5F80026A9FC /* ViewController.swift in Sources */,
+				B663EC14258DD373001E37FD /* R.generated.swift in Sources */,
 				B66F61232504AD2F0026A9FC /* KeyboardViewController.swift in Sources */,
 				B66F60F02504A5F80026A9FC /* AppDelegate.swift in Sources */,
 				B660ECD8250C8BAD003654BB /* KingfisherViewController.swift in Sources */,
