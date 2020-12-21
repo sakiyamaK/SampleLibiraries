@@ -10,7 +10,7 @@ import UIKit
 import SwiftyAttributes
 
 final class SwiftyAttributeViewController: UIViewController {
-
+  
   @IBOutlet weak var noLibraryLabel: UILabel! {
     didSet {
       let style = NSMutableParagraphStyle()
@@ -23,7 +23,7 @@ final class SwiftyAttributeViewController: UIViewController {
         .strokeColor : UIColor.red,
         .strokeWidth : -3.0
       ]
-
+      
       let textAttributes2: [NSAttributedString.Key : Any] = [
         .font : UIFont.systemFont(ofSize: 20.0),
         .paragraphStyle : style,
@@ -31,14 +31,15 @@ final class SwiftyAttributeViewController: UIViewController {
         .strokeColor : UIColor.green,
         .strokeWidth : -2.0
       ]
-
+      
       let attText1 = NSMutableAttributedString(string: "これは装飾", attributes: textAttributes1)
       let attText2 = NSMutableAttributedString(string: "テキストです", attributes: textAttributes2)
       attText1.append(attText2)
+      
       noLibraryLabel.attributedText = attText1
     }
   }
-
+  
   @IBOutlet weak var swiftyAttributesLabel: UILabel! {
     didSet {
       let style = NSMutableParagraphStyle()
