@@ -10,6 +10,12 @@
 		1567C6857F89B9CB02242D88 /* Pods_SampleLibirariesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB87B65D477EBD5A21B87E9 /* Pods_SampleLibirariesTests.framework */; };
 		2D0BB51E8D2556F54CF4B502 /* Pods_SampleLibiraries_SampleLibirariesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBFD5F236AB5B444550ADA6 /* Pods_SampleLibiraries_SampleLibirariesUITests.framework */; };
 		6BA65FB49EE5037C0A1FAF3E /* Pods_SampleLibiraries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7770190CCB484F00F18CC1C /* Pods_SampleLibiraries.framework */; };
+		B631465E25CEE90B00C9CA6D /* GithubSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B631465725CEE90B00C9CA6D /* GithubSearch.storyboard */; };
+		B631465F25CEE90B00C9CA6D /* GithubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B631465825CEE90B00C9CA6D /* GithubSearchViewController.swift */; };
+		B631466025CEE90B00C9CA6D /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B631465925CEE90B00C9CA6D /* GithubAPI.swift */; };
+		B631466125CEE90B00C9CA6D /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B631465A25CEE90B00C9CA6D /* GithubModel.swift */; };
+		B631466225CEE90B00C9CA6D /* GithubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B631465C25CEE90B00C9CA6D /* GithubTableViewCell.xib */; };
+		B631466325CEE90B00C9CA6D /* GithubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B631465D25CEE90B00C9CA6D /* GithubTableViewCell.swift */; };
 		B660ECBF250BA782003654BB /* Rswift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B660ECBE250BA782003654BB /* Rswift.storyboard */; };
 		B660ECC1250BA790003654BB /* RswiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660ECC0250BA790003654BB /* RswiftViewController.swift */; };
 		B660ECC4250BD241003654BB /* Lottie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B660ECC3250BD241003654BB /* Lottie.storyboard */; };
@@ -58,6 +64,12 @@
 		1A3C2A70B788CD551867B392 /* Pods-SampleLibiraries-SampleLibirariesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleLibiraries-SampleLibirariesUITests.debug.xcconfig"; path = "Target Support Files/Pods-SampleLibiraries-SampleLibirariesUITests/Pods-SampleLibiraries-SampleLibirariesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DB87B65D477EBD5A21B87E9 /* Pods_SampleLibirariesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleLibirariesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBFD5F236AB5B444550ADA6 /* Pods_SampleLibiraries_SampleLibirariesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleLibiraries_SampleLibirariesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B631465725CEE90B00C9CA6D /* GithubSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GithubSearch.storyboard; sourceTree = "<group>"; };
+		B631465825CEE90B00C9CA6D /* GithubSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSearchViewController.swift; sourceTree = "<group>"; };
+		B631465925CEE90B00C9CA6D /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		B631465A25CEE90B00C9CA6D /* GithubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
+		B631465C25CEE90B00C9CA6D /* GithubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GithubTableViewCell.xib; sourceTree = "<group>"; };
+		B631465D25CEE90B00C9CA6D /* GithubTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubTableViewCell.swift; sourceTree = "<group>"; };
 		B660ECBE250BA782003654BB /* Rswift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rswift.storyboard; sourceTree = "<group>"; };
 		B660ECC0250BA790003654BB /* RswiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RswiftViewController.swift; sourceTree = "<group>"; };
 		B660ECC3250BD241003654BB /* Lottie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lottie.storyboard; sourceTree = "<group>"; };
@@ -144,6 +156,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B631463325CEE59900C9CA6D /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				B631465925CEE90B00C9CA6D /* GithubAPI.swift */,
+				B631465A25CEE90B00C9CA6D /* GithubModel.swift */,
+				B631465B25CEE90B00C9CA6D /* GithubTableCell */,
+				B631465625CEE90B00C9CA6D /* GithubTableViewController */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		B631465625CEE90B00C9CA6D /* GithubTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B631465725CEE90B00C9CA6D /* GithubSearch.storyboard */,
+				B631465825CEE90B00C9CA6D /* GithubSearchViewController.swift */,
+			);
+			path = GithubTableViewController;
+			sourceTree = "<group>";
+		};
+		B631465B25CEE90B00C9CA6D /* GithubTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				B631465C25CEE90B00C9CA6D /* GithubTableViewCell.xib */,
+				B631465D25CEE90B00C9CA6D /* GithubTableViewCell.swift */,
+			);
+			path = GithubTableCell;
+			sourceTree = "<group>";
+		};
 		B660ECBD250BA6B5003654BB /* Rswift */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +256,7 @@
 		B66F60EE2504A5F80026A9FC /* SampleLibiraries */ = {
 			isa = PBXGroup;
 			children = (
+				B631463325CEE59900C9CA6D /* Alamofire */,
 				B663EC13258DD373001E37FD /* R.generated.swift */,
 				B6DDFF73253D3120001303B1 /* SwiftyAttribute */,
 				B660ECD4250C8B86003654BB /* Kingfisher */,
@@ -383,11 +425,13 @@
 				B660ECC4250BD241003654BB /* Lottie.storyboard in Resources */,
 				B66F60F92504A5FA0026A9FC /* Assets.xcassets in Resources */,
 				B6DDFF78253D3133001303B1 /* SwiftyAttribute.storyboard in Resources */,
+				B631465E25CEE90B00C9CA6D /* GithubSearch.storyboard in Resources */,
 				B66F60F72504A5F80026A9FC /* Main.storyboard in Resources */,
 				B660ECCC250BD2AC003654BB /* 9965-loading-spinner.json in Resources */,
 				B66F61212504AD220026A9FC /* Keyboard.storyboard in Resources */,
 				B660ECBF250BA782003654BB /* Rswift.storyboard in Resources */,
 				B660ECCE250BD2AC003654BB /* 32921-volumn-from-mute-to-maximum.json in Resources */,
+				B631466225CEE90B00C9CA6D /* GithubTableViewCell.xib in Resources */,
 				B660ECCD250BD2AC003654BB /* 32910-success.json in Resources */,
 				B660ECD6250C8B9D003654BB /* Kingfisher.storyboard in Resources */,
 				B660ECD1250C81C8003654BB /* ActiveLabel.storyboard in Resources */,
@@ -539,14 +583,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B631465F25CEE90B00C9CA6D /* GithubSearchViewController.swift in Sources */,
 				B660ECC6250BD24E003654BB /* LottieViewController.swift in Sources */,
 				B66F60F42504A5F80026A9FC /* ViewController.swift in Sources */,
 				B663EC14258DD373001E37FD /* R.generated.swift in Sources */,
+				B631466125CEE90B00C9CA6D /* GithubModel.swift in Sources */,
 				B66F61232504AD2F0026A9FC /* KeyboardViewController.swift in Sources */,
 				B66F60F02504A5F80026A9FC /* AppDelegate.swift in Sources */,
 				B660ECD8250C8BAD003654BB /* KingfisherViewController.swift in Sources */,
 				B660ECC1250BA790003654BB /* RswiftViewController.swift in Sources */,
+				B631466325CEE90B00C9CA6D /* GithubTableViewCell.swift in Sources */,
 				B660ECD3250C81D8003654BB /* ActiveLabelViewController.swift in Sources */,
+				B631466025CEE90B00C9CA6D /* GithubAPI.swift in Sources */,
 				B6DDFF7D253D3140001303B1 /* SwiftyAttributeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
