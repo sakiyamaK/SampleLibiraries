@@ -15,6 +15,9 @@ target 'SampleLibiraries' do
   pod "Alamofire"
   pod "SwiftyAttributes"
   pod "ActiveLabel"
+  pod "SnapKit"
+  pod 'SwiftLint'
+  pod 'LicensePlist'
   pod "HyperioniOS/Core", :configurations => ['Debug']
 
 

@@ -1,0 +1,107 @@
+name: ActiveLabel, nameSpecified: 
+body: The MIT License (MIT…
+version: 1.1.0
+
+name: ActiveLabel, nameSpecified: 
+body: The MIT License (MIT…
+version: 1.1.0
+
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014-2…
+version: 5.4.1
+
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014-2…
+version: 5.4.1
+
+name: HyperioniOS, nameSpecified: 
+body: Copyright (c) 2017 W…
+version: 1.1.0
+
+name: HyperioniOS, nameSpecified: 
+body: Copyright (c) 2017 W…
+version: 1.1.0
+
+name: IQKeyboardManager, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 6.5.6
+
+name: IQKeyboardManager, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 6.5.6
+
+name: Kingfisher, nameSpecified: 
+body: The MIT License (MIT…
+version: 6.1.1
+
+name: Kingfisher, nameSpecified: 
+body: The MIT License (MIT…
+version: 6.1.1
+
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 3.0.5
+
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 3.0.5
+
+name: lottie-ios, nameSpecified: 
+body:                     …
+version: 3.2.1
+
+name: lottie-ios, nameSpecified: 
+body:                     …
+version: 3.2.1
+
+name: R.swift, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.3.1
+
+name: R.swift, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.3.1
+
+name: R.swift.Library, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.3.0
+
+name: R.swift.Library, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.3.0
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.0.1
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.0.1
+
+name: SwiftLint, nameSpecified: 
+body: The MIT License (MIT…
+version: 0.42.0
+
+name: SwiftLint, nameSpecified: 
+body: The MIT License (MIT…
+version: 0.42.0
+
+name: SwiftyAttributes, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.1.1
+
+name: SwiftyAttributes, nameSpecified: 
+body: The MIT License (MIT…
+version: 5.1.1
+
+add-version-numbers: false
+
+LicensePlist Version: 3.0.5

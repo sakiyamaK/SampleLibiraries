@@ -10,25 +10,25 @@ import UIKit
 
 final class RswiftViewController: UIViewController {
 
-  @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var button: UIButton!
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    //Assets
-    //color
-    let m = R.color.mainColor
+        // Assets
+        // color
+        let m = R.color.mainColor
 
-    //image
-    let img = R.image.defImage()
+        // image
+        let img = R.image.defImage()
 
-    button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
-  }
+        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
+    }
 
-  @objc func tapButton() {
-    //storyboard
-    let vc = R.storyboard.activeLabel().instantiateInitialViewController()!
-    self.navigationController?.pushViewController(vc, animated: true)
+    @objc func tapButton() {
+        // storyboard
+        let vc = R.storyboard.activeLabel().instantiateInitialViewController()!
+        self.navigationController?.pushViewController(vc, animated: true)
 
-  }
+    }
 }

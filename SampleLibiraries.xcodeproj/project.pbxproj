@@ -37,6 +37,7 @@
 		B66F61122504A5FA0026A9FC /* SampleLibirariesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F61112504A5FA0026A9FC /* SampleLibirariesUITests.swift */; };
 		B66F61212504AD220026A9FC /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F61202504AD220026A9FC /* Keyboard.storyboard */; };
 		B66F61232504AD2F0026A9FC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F61222504AD2F0026A9FC /* KeyboardViewController.swift */; };
+		B6BAF04425F9FF64006E7088 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6BAF04325F9FF64006E7088 /* Settings.bundle */; };
 		B6DDFF78253D3133001303B1 /* SwiftyAttribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DDFF77253D3133001303B1 /* SwiftyAttribute.storyboard */; };
 		B6DDFF7D253D3140001303B1 /* SwiftyAttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DDFF7C253D3140001303B1 /* SwiftyAttributeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		B66F61132504A5FA0026A9FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66F61202504AD220026A9FC /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		B66F61222504AD2F0026A9FC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		B6BAF04325F9FF64006E7088 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = SampleLibiraries/Settings.bundle; sourceTree = "<group>"; };
 		B6DDFF77253D3133001303B1 /* SwiftyAttribute.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftyAttribute.storyboard; sourceTree = "<group>"; };
 		B6DDFF7C253D3140001303B1 /* SwiftyAttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAttributeViewController.swift; sourceTree = "<group>"; };
 		B7770190CCB484F00F18CC1C /* Pods_SampleLibiraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleLibiraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +236,7 @@
 		B66F60E32504A5F80026A9FC = {
 			isa = PBXGroup;
 			children = (
+				B6BAF04325F9FF64006E7088 /* Settings.bundle */,
 				B66F60EE2504A5F80026A9FC /* SampleLibiraries */,
 				B66F61052504A5FA0026A9FC /* SampleLibirariesTests */,
 				B66F61102504A5FA0026A9FC /* SampleLibirariesUITests */,
@@ -319,11 +322,13 @@
 			buildConfigurationList = B66F61162504A5FA0026A9FC /* Build configuration list for PBXNativeTarget "SampleLibiraries" */;
 			buildPhases = (
 				9079CB1D2EE83DB0E8A1522F /* [CP] Check Pods Manifest.lock */,
+				B6BAEFFA25F9F97D006E7088 /* Run Script(swiftLint) */,
 				B663EBFB258DD2D7001E37FD /* Run Script(R.swift) */,
 				B66F60E82504A5F80026A9FC /* Sources */,
 				B66F60E92504A5F80026A9FC /* Frameworks */,
 				B66F60EA2504A5F80026A9FC /* Resources */,
 				0DBA0D4D629E5997D1EC7ABF /* [CP] Embed Pods Frameworks */,
+				B6BAF03C25F9FD5A006E7088 /* Run Script(LicensePlist) */,
 			);
 			buildRules = (
 			);
@@ -428,6 +433,7 @@
 				B631465E25CEE90B00C9CA6D /* GithubSearch.storyboard in Resources */,
 				B66F60F72504A5F80026A9FC /* Main.storyboard in Resources */,
 				B660ECCC250BD2AC003654BB /* 9965-loading-spinner.json in Resources */,
+				B6BAF04425F9FF64006E7088 /* Settings.bundle in Resources */,
 				B66F61212504AD220026A9FC /* Keyboard.storyboard in Resources */,
 				B660ECBF250BA782003654BB /* Rswift.storyboard in Resources */,
 				B660ECCE250BD2AC003654BB /* 32921-volumn-from-mute-to-maximum.json in Resources */,
@@ -558,6 +564,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		B6BAEFFA25F9F97D006E7088 /* Run Script(swiftLint) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script(swiftLint)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect --format\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		B6BAF03C25F9FD5A006E7088 /* Run Script(LicensePlist) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script(LicensePlist)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION = \"Debug\" ]; then\ncd $SRCROOT\n/usr/local/bin/license-plist --output-path $PRODUCT_NAME/Settings.bundle\nfi\n";
 		};
 		EBF95D3F6B32CAD274642082 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
